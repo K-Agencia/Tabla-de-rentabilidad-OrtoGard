@@ -1,0 +1,135 @@
+div.container {
+    width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
+    color: #76787f;
+    font-family: "Open Sans";
+}
+
+div.cabecera {
+    display: flex;
+    width: 100%;
+}
+
+div.cabecera img.logoColgate {
+    width: 80%;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+div.cabecera img.iconoCerrar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 8%;
+}
+
+div.contexto {
+    text-align: center;
+    margin: 0 6rem;
+}
+
+.contexto p b.color {
+    color: #c0211d;
+}
+
+div.tabla {
+    margin: 0 auto;
+    width: 80%;
+    background: #e2e2e2;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
+}
+
+/* tbody, tr, td{
+    border: hidden;
+    border-collapse: collapse;
+} */
+table{
+    border-collapse: collapse;
+    
+}
+div img.fondo {
+    position: relative;
+    top: 1rem;
+    transform: scale(1.225);
+    padding: 0;
+
+}
+
+div h3.titulo {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 3rem;
+    text-align: center;
+    position: relative;
+    top: -7rem;
+}
+
+div p.instrucciones {
+    margin-top: -5rem;
+    margin: -5rem 2rem 2rem 2rem;
+    font-size: 15px;
+    text-align: center;
+}
+
+input,
+select {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background: #fff;
+    border: 0;
+    outline: none;
+    border: 0;
+    text-align: end;
+}
+
+input:disabled {
+    background: #fff8d2;
+}
+
+td{
+    vertical-align: middle;
+    bottom: 1rem;
+}
+tr td span{
+    position: relative;
+    top: -1.5rem;
+    left: 11rem;
+}
+
+tr td p {
+    margin-right: 2rem;
+    text-align: end;
+    font-weight: 500;
+}
+
+tr td p.info {
+    margin-top: -1rem;
+    margin-right: 2rem;
+    text-align: end;
+    font-size: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+table tbody tr.resultado {
+    z-index: 2;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    background: #9ad8dc;
+    border-collapse: separate;
+    border-radius: 2rem;
+
+}
+
+tr td.info p.info {
+    margin: 1rem 3rem;
+    text-align: center;
+}

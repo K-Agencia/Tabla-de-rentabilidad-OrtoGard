@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentabilidad - Consultorio con duraphat</title>
+    <link rel="shortcut icon" href="./SVG/favicon.png" />
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecera">
+            <img class="logoColgate" src="./SVG/logorentabilidad.svg">
+        </div>
+        <div class="contexto">
+            <p><b>Ingrese los datos en las casillas en blanco de la tabla de simulación</b> de acuerdo a los valores que
+                usted considere y verifique la ganancia que puede obtener por cada kit de <b class="color">Colgate
+                    OrthoGard</b></p>
+        </div>
+        <div class="tabla">
+            <img class="fondo" src="./SVG/franjatabla.svg">
+            <h3 class="titulo">TABLA DE SIMULACIÓN DE RENTABILIDAD COLGATE ORTHOGARD</h3>
+            <p class="instrucciones"> A continuación le presentamos un ejemplo. Para el ejercicio debe introducir los
+                valores que considere para su caso personal</p>
+            <div class="colorFondo"></div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>¿Eres Asociado a la cooperativa SCO Life?:</p>
+                        </td>
+                        <td>
+                            <select id="asociado" onchange="seleccion();">
+                                <option selected disabled value="0"> Elige una opción </option>
+                                <option value="s">Si</option>
+                                <option value="n">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Cantidad de kits a comprar:</p>
+                            <p class="info">(Por cada 10 kits se Obsequian 2)</p>
+                        </td>
+                        <td>
+                            <input id="cantidadKits" type="number" onchange="f_totalPagar();" value="10">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Precio Kit ($):</p>
+                        </td>
+                        <td class="label">
+                            <Label id="precioKit" onchange="f_precioKit();" >
+                        </td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Total a pagar:</p>
+                        </td>
+                        <td class="label">
+                            <label id="totalPagar">
+                        </td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>KITS OBSEQUIO POR COMPRA:</p>
+                        </td>
+                        <td class="label">
+                            <label id="obsequioKit">
+                        </td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Total Kits a recibir:</p>
+                        </td>
+                        <td class="label">
+                            <label id="totalKit">
+                        </td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Valor equivalente por kit:</p>
+                            <p class="info">** (Este cálculo se hace basado en el total a pagar / el total de kits a
+                                recibir)</p>
+                        </td>
+                        <td class="label">
+                            <label id="valorEquivalente">
+                        </td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- ----------------------------- -->
+                            <p>Precio Venta:</p>
+                            <p class="info">(PSV $35.000)</p>
+                        </td>
+                        <td>
+                            <input id="precioVenta" type="number" onchange="f_ventaTotal();" value="35000">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Venta Total:</p>
+                        </td>
+                        <td class="label">
+                            <label id="ventaTotal">
+                        </td>
+                        <td>*</td>
+                    </tr>
+                <!-- </tbody>
+            </table>
+            <table>
+                <tbody> -->
+                    <tr class="resultado">
+                        <td>
+                            <p>Ganancia por la Venta</p>
+                        </td>
+                        <td class="label">
+                            <label id="gananciaVenta">
+                        </td>
+                        <td>*</td>
+                    </tr>
+                    <tr class="resultado">
+                        <td>
+                            <p>Ganancia por Kit</p>
+                        </td>
+                        <td class="label">
+                            <label id="gananciaKit">
+                        </td>
+                        <td>*</td>
+                    </tr>
+
+                    <tr>
+                        <!-- </tbody>                     -->
+                        <td class="info" colspan="2">
+                            <p class="info">*Estas casillas están predeterminadas con fórmulas para efecto del ejercicio
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

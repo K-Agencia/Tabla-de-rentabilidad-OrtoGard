@@ -1,7 +1,7 @@
 div.container {
     width: 40rem;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
     color: #76787f;
     font-family: "Open Sans";
@@ -9,6 +9,7 @@ div.container {
 
 div.cabecera {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -83,11 +84,22 @@ select {
     border: 0;
     outline: none;
     border: 0;
-    text-align: end;
+    text-align: center;
+    width: 130px;
 }
 
-input:disabled {
-    background: #fff8d2;
+.label {
+    background: url("./SVG/cuadro1detexto.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 150px 2100px;
+} 
+
+label{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 td{

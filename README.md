@@ -3,7 +3,7 @@
 ¡Bienvenido al repositorio de la Tabla de Rentabilidad Colgate OrthoGard!
 
 ## Imagen ilustrativa
-[Imagen ilustrativa](https://imagenes.kagencia.com/Repositorio%20-%20GitHub/Rentabilidad%20-%20Consultorio%20con%20duraphat.png)
+![Imagen ilustrativa](Consultorio con duraphat.png)
 
 ## Descripción
 

@@ -3,7 +3,7 @@
 ¡Bienvenido al repositorio de la Tabla de Rentabilidad Colgate OrthoGard!
 
 ## Imagen ilustrativa
-![Imagen ilustrativa](Consultorio con duraphat.png)
+![Imagen ilustrativa](consultorio_con_duraphat.png)
 
 ## Descripción
 
